@@ -1,6 +1,41 @@
-@import "tailwindcss"; 
+@font-face {
+  font-family: Montserrat-thin;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/fonts/Montserrat-Thin.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Reguler;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/public/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Montserrat-Semibold;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/public/fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Inter-regular;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/fonts/Inter_18pt-Regular.ttf");
+}
+
+@import "tailwindcss";
 /* @layer theme, base, components, utilities; */
-@theme { 
-  --spacing: 1px;  
-  --font-weight-extrablack: 1000;
-  }
+
+@theme {
+  --spacing: 1px;
+  --font-Montserrat-thin: "Montserrat-thin", "sans-serif";
+  --font-Inter-regular: "Inter-regular";
+  --font-Montserrat-Reguler: "Montserrat-Reguler";
+  --font-Montserrat-Semibold: "Montserrat-Semibold";
+}
