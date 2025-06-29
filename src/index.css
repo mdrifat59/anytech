@@ -20,6 +20,20 @@
   font-display: swap;
   src: url("/public/fonts/Montserrat-SemiBold.ttf");
 }
+@font-face {
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/public/fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/public/fonts/Montserrat-Medium.ttf");
+}
 
 @font-face {
   font-family: Inter-regular;
@@ -38,4 +52,6 @@
   --font-Inter-regular: "Inter-regular";
   --font-Montserrat-Reguler: "Montserrat-Reguler";
   --font-Montserrat-Semibold: "Montserrat-Semibold";
+  --font-Montserrat-Bold: "Montserrat-Bold";
+  --font-Montserrat-Medium: "Montserrat-Medium";
 }

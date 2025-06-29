@@ -36,6 +36,7 @@ const Homebanner = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, [])
   return (
+
     <section className=' relative  bg-[radial-gradient(59.82%_121.73%_at_-9.66%_130.31%,_#00e9ea_0%,_#1f80f0_52.08%,_#005bc4_100%)] w-full h-screen [clip-path:polygon(0_0,100%_0,100%_81%,0%_100%)] overflow-hidden ' >
 
       {/* bg man image */}
@@ -56,9 +57,7 @@ const Homebanner = () => {
           transition: 'transform 2s ease-out'
         }}></div>
 
-      <Navbar type={'transparent'} />
-      <div className=" pt-[150px]  pb-[500px] ">
-        {/* left site */}
+      <div className=" pt-[150px]  pb-[500px] "> 
         <div className=" max-w-1200 mx-auto z-[999]">
           <h1 className='max-w-[672px]  font-Montserrat-Semibold  text-[80px] leading-[115%] tracking-[-1.6px] text-[#FFFFFF]'>Embrace the future of finance
           </h1>

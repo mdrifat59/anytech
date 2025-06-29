@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 const Rootlayout = () => {
     return (
         <>
-            {/* <Navbar /> */} 
+            <Navbar /> 
             <Outlet />
         </>
 
