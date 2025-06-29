@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <>
         <Homebanner/>
+        <div className='h-[500px] w-full'></div>
     </>
   )
 }
