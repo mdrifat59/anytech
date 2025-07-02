@@ -7,29 +7,30 @@ import { MdOutlineLanguage } from "react-icons/md";
 import { FaAngleDown, FaAngleRight } from "react-icons/fa6";
 
 const Navbar = ({ type }) => {
-  const [navBarType, setNavBarType] = useState(type); 
+  const [navBarType, setNavBarType] = useState(type);
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
       if (window.scrollY > 10) {
         setNavBarType('standard');
       } else {
         setNavBarType('transparent');
       }
-      
+
       // Show/hide navbar on scroll direction
-       if (currentScrollY > lastScrollY && currentScrollY > 100) {
-         setShowNavbar(false); // scroll down → hide
-       } else {
-         setShowNavbar(true); // scroll up → show
-       }
-  
-       setLastScrollY(currentScrollY);
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
+      }
+      setLastScrollY(currentScrollY);
     };
 
-  
+
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -48,25 +49,25 @@ const Navbar = ({ type }) => {
               <a href="#" className={`flex items-center gap-10 text-base py-16 px-24 font-Inter-regular ${navBarType === 'standard' ? 'text-[#1f80f0]' : 'text-[#F3F7FC]'}`}>
                 Solutions <FaAngleDown />
               </a>
-                <ul className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg rounded-md py-2 z-50 min-w-[240px]">
-                  <li className='first:border-none border-blue-light'>
-                    <a href="#" className="block p-10 text-sm text-[#163862] hover:bg-gray-100">
-                      AnyCaaS
-                    </a>
-                    <hr />
-                  </li>
-                  <li className='first:border-none border-blue-light'>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                      SomeOtherSolution
-                    </a>
-                    <hr />
-                  </li>
-                  <li>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                      AnotherTool
-                    </a>
-                  </li>
-                </ul>
+              <ul className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg rounded-md py-2 z-50 min-w-[240px]">
+                <li className='first:border-none border-blue-light'>
+                  <a href="#" className="block p-10 text-sm text-[#163862] hover:bg-gray-100">
+                    AnyCaaS
+                  </a>
+                  <hr />
+                </li>
+                <li className='first:border-none border-blue-light'>
+                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    SomeOtherSolution
+                  </a>
+                  <hr />
+                </li>
+                <li>
+                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    AnotherTool
+                  </a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="#" className={`text-base py-16 px-24 hover:border-b font-Inter-regular ${navBarType === 'standard' ? 'text-[#1f80f0]' : 'text-[#F3F7FC]'}`}>Services</a>
