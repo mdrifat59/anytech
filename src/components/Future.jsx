@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from './Carousel'
+import { Shapeicon } from './svg/shape'
 
 const Future = () => {
   return (
@@ -9,6 +10,7 @@ const Future = () => {
         <h2 className="font-Montserrat-Semibold text-[56px] text-[#0b305b] leading-[110%] my-20   text-center">The future of finance</h2>
       </div>
       <Carousel />
+      <Shapeicon/>
     </section>
   )
 }
