@@ -37,7 +37,7 @@ const Navbar = ({ type }) => {
   }, [lastScrollY]);
 
   return (
-    <nav className={`w-full top-0 z-[999999] transition-all duration-300  ${navBarType === "standard" ? 'bg-[#ffffff]  fixed' : 'bg-transparent fixed'
+    <nav className={`w-full top-0 z-[999999] transition-all duration-300 shadow-2xl  ${navBarType === "standard" ? 'bg-[#ffffff]  fixed' : 'bg-transparent fixed'
       }  ${showNavbar ? 'translate-y-0' : '-translate-y-full'} `} >
       <div className="w-[90%] mx-auto flex justify-between items-center py-20">
         <div>

@@ -10,7 +10,7 @@ const Home = () => {
         <Homebanner/>
         <Finance/>
         <Philosophy/>
-        <Future/>
+        <Future/> 
     </>
   )
 }

@@ -55,6 +55,7 @@
   --font-Montserrat-Bold: "Montserrat-Bold";
   --font-Montserrat-Medium: "Montserrat-Medium";
   --animate-moving: wiggle 10s ease-out infinite;
+   
 
   @keyframes wiggle{
     0%,100%{
