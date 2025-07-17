@@ -11,7 +11,7 @@ const Philosophy = () => {
                 <div className="max-w-1200 mx-auto">
                     <h6 className="font-Montserrat-Bold text-base text-[#1f80f0] tracking-[2.56px] text-center">OUR PHILOSOPHY</h6>
                     <h2 className="font-Montserrat-Semibold text-[56px] text-[#0b305b] leading-[110%] my-20 tracking-[2.56px] text-center">Human-centred innovation</h2>
-                    <img src={philosophyImg} className='mt-8' alt="" />
+                    <img src={philosophyImg} className='mt-32' alt="" />
 
                     {/* card */}
                     <div className="grid grid-cols-3 gap-[30px] py-32">
